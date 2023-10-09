@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAVE CONNECT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0; /* Reduced padding for the header */
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            color: #fff; /* Font color for the header */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff; /* Font color for navigation links */
+            padding: 10px 40px; /* Adjust padding for the taskbar */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #386d8a;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff; /* Font color for taskbar items */
+            position: relative;
+            margin-left: 20px; /* Add space between taskbar items */
+            transition: color 0.3s; /* Add transition effect for color change */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        nav a:hover {
+            color: #386d8a; /* Change color on hover */
+        }
+
+        nav a:hover::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2px;
+            height: 2px;
+            background-color: #386d8a; /* Underline color on hover */
+        }
+
+        /* Background image with z-index -1 */
+        .background {
+            background-image: url(P\ img3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px; /* Increased padding for content */
+            color: #ffffff; /* Font color for content above the image */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        
+
+        .button {
+            padding: 10px 20px;
+            background-color: #386d8a;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border: none;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            header {
+                padding: 5px 0;
+            }
+
+            nav {
+                padding: 5px 20px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .button:active {
+            background-color: #255b75; /* Change the background color when clicked */
+        }
+
+        section{
+            display: inline-flex;
+        }
+
+           /* Previous CSS styles as in your code */
+
+    /* Style for the sections container */
+    .sections-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    /* Style for individual sections */
+    .section {
+        flex-basis: calc(25% - 20px); /* Adjust the width of each section */
+        border: 2px solid white;
+        padding: 20px;
+        margin: 0 10px 20px;
+        min-width: 300px;
+    }
+
+    /* Style for section headings and list items */
+    .section h3 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .section ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .section ul li {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    
+    /* Style for the table-like structure */
+    .table-container {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .table-row {
+        display: table-row;
+    }
+
+    .table-cell {
+        display: table-cell;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 20px;
+        min-width: 300px;
+    }
+
+    /* Style for section headings and list items */
+    .table-cell h3 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .table-cell ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .table-cell ul li {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    .book-button {
+    background-color: #255b75;;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    bottom: 10px;
+    right: 10px;
+}
+
+.book-button:hover {
+    background-color: #a6c3d1;;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <header>
+        <nav>
+            <div class="logo">CRAVE CONNECT</div>
+            <br>
+            <div class="flex-container">
+                <a href="#home">HOME</a>
+                <a href="#menu">MENU</a>
+                <a href="#kitchen">KITCHEN</a>
+                <a href="#contact">CONTACT US</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>CRAVE CONNECT</h1>
+        <p>Elevate your taste journey with an app that brings your cravings to life, one delicious connection at a time</p>
+
+        <br>
+        <br> 
+        <div class="buttons">
+            <a href="Ordernow.html" class="button" class="book-button"> Specials </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2> Types of Food Items available </h2>
+        <div class="flex-container">
+            <div class="table-cell">
+                <h3>Indian:</h3>
+                <h5> Madra from Himachal Pradesh <br>
+                    Irachi Ishtu <br>
+                    Kerala Chicken  <br>
+                    Makki Roti and Sarson Saag from Punjab <br>
+                    Daab Chingri from West Bengal <br>
+                    Pork with dried Bamboo strips from Nagaland <br>
+                </h5> 
+                <button class="book-button">Order Now </button>
+            </div>
+            <div class="table-cell">
+                <h3>Italian:</h3>
+                <h5> Pizza <br>
+                    Pasta <br>
+                    Arancini <br>
+                    Focaccia <br>
+                    Italian Cheese <br>
+                    Ossobuco <br>
+                    Risotto 
+                </h5>
+                <button class="book-button">Order Now </button>
+            </div>
+            <div class="table-cell">
+                <h3>Continental:</h3>
+                <h5> Asparagus Bruschetta <br>
+                    Aubergine Au Gratin <br>
+                    Baked Kidney Beans with Alfredo Sauce <br>
+                    Baked Noodles with Spinach and Yoghurt <br>
+                    Baked Pesto Pasta <br>
+                    Baked Rice with Corn Curry <br>
+                    Baked Spaghetti with Paneer Balls in Spinach Sauce <br>
+                    Baked Spinach Pancakes In Tomato 
+                </h5>
+                <button class="book-button">Order Now </button>
+            </div>
+            <div class="table-cell">
+                <h3>Chinese:</h3>
+                <h5> Kung Pao Chicken <br>
+                    Sweet and Sour Pork <br>
+                    Peking Roast Duck <br>
+                    Mapo Tofu <br>
+                    Chow Mein <br>
+                    Chinese Hot Pot <br>
+                    Spring Rolls <br>
+                    Wonton Soup
+                </h5>
+                <button class="book-button" >Order Now </button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
